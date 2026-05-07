@@ -2,7 +2,6 @@
 Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banco de dados Supabase.
 
 ### O que voçê vai ver nesse Projeto
-- **CRUD** - Conjunto de quatro operações essenciais que permitem a manipulação de dados persistentes (criar, ler, atualizar e excluir).
 - **Supabase** -  Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL 
 - **Client Supabase** - Instância de cliente que permite interagir com todos os serviços do Supabase
 - **.env** - Gerenciar variáveis de ambiente, garantindo segurança (não expor senhas/chaves) e flexibilidade entre ambientes (desenvolvimento, produção).
