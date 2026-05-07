@@ -1,9 +1,7 @@
 ## API-NodeJS-RepositoryPattern-Supabase
-
 Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banco de dados Supabase.
 
 ### O que voçê vai ver nesse Projeto
-
 - **CRUD** - Conjunto de quatro operações essenciais que permitem a manipulação de dados persistentes (criar, ler, atualizar e excluir).
 - **Supabase** -  Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL 
 - **Client Supabase** - Instância de cliente que permite interagir com todos os serviços do Supabase
@@ -13,32 +11,26 @@ Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banc
 - **Sequelize** - Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL
 
 #### Requisitos e Detalhe do uso do Node.js
-
 Instalar o Framework de desenvolvimento. 
-
 ```bash
-	npm install express
+npm install express
 ```
 
 Automatizar o processo de reinicialização
-
 ```bash
-    npm install -g nodemon
+npm install -g nodemon
 ```
 
 #### Para iniciar o servidor colocar o comando:
-
 ```bash
-    nodemon index.js
-	ou 
-    node index.js
+nodemon index.js
+ou 
+node index.js
 ```
 
 #### Execução Inicial de Endpoints (Postman)
-
 **(1 -Registrar paciente)**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
-
    ```json
     { 
             "nome": "Pessoa 1", 
@@ -50,7 +42,6 @@ Automatizar o processo de reinicialização
 
 **(2 -Alterar paciente)**
 - Enviar PUT / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
-
   ```json
     { 
             "pacienteId": 1, 
@@ -63,8 +54,6 @@ Automatizar o processo de reinicialização
 
 **(3 -Registrar sessão)**
 - Enviar POST / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
-
-
    ```json
     { 
             "pacienteId": 1,
@@ -77,7 +66,6 @@ Automatizar o processo de reinicialização
 
 **(4 -Alterar sessão)**
 - Enviar PUT / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
-
 ```json
     { 
             "sessaoId": 1,
@@ -89,35 +77,29 @@ Automatizar o processo de reinicialização
 ```
 
 #### Rotas dos métodos
-
 ```bash
-	Metodo: POST /paciente
-	Metodo: PUT /paciente
-	Metodo: DELETE /paciente/1
-    Metodo: GET /paciente
-	Metodo: GET /paciente/likeNome?nome="Pessoa 1"
-	Metodo: POST /sessao
-	Metodo: PUT /sessao
-	Metodo: DELETE /sessao/1
-	Metodo: GET /sessao/1
-	Metodo: GET /sessao
+Metodo: POST /paciente
+Metodo: PUT /paciente
+Metodo: DELETE /paciente/1
+Metodo: GET /paciente
+Metodo: GET /paciente/likeNome?nome="Pessoa 1"
+Metodo: POST /sessao
+Metodo: PUT /sessao
+Metodo: DELETE /sessao/1
+Metodo: GET /sessao/1
+Metodo: GET /sessao
 ```
 
-
 #### String de conexão do banco
-
 Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
 
 ```bash
-...
-        const sequelize = new Sequelize('SEUBANCO', 'postgres', 'SUASENHA', {
-        host: 'localhost',
-        dialect: 'postgres',
-        define: {
-            timestamps: false,
-            },
-...
-
+const sequelize = new Sequelize('SEUBANCO', 'postgres', 'SUASENHA', {
+host: 'localhost',
+dialect: 'postgres',
+define: {
+	timestamps: false,
+	},
 ```
 
 O script para criação da tabela do exemplo encontra-se na pasta **Database**.
