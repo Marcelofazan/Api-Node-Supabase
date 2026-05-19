@@ -29,7 +29,7 @@ ou
 node index.js
 ```
 
-### 🧪 Execução Inicial de Endpoints (Postman)
+### 🧪 Execução de Endpoints
 **(1 -Registrar paciente)**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
    ```json
