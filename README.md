@@ -80,16 +80,16 @@ node index.js
 ### Rotas dos métodos
 | Metodo | Descrição |
 |-----------|-----------|
-| Metodo: | POST /paciente |
-| Metodo: | PUT /paciente |
-| Metodo: | DELETE /paciente/1 |
-| Metodo: | GET /paciente |
-| Metodo: | GET /paciente/likeNome?nome="Pessoa 1" |
-| Metodo: | POST /sessao |
-| Metodo: | PUT /sessao |
-| Metodo: | DELETE /sessao/1 |
-| Metodo: | GET /sessao/1 |
-| Metodo: | GET /sessao |
+| Metodo: POST |  /paciente |
+| Metodo: PUT | /paciente |
+| Metodo: DELETE |  /paciente/1 |
+| Metodo: GET |  /paciente |
+| Metodo: GET |  /paciente/likeNome?nome="Pessoa 1" |
+| Metodo: POST |  /sessao |
+| Metodo: PUT |  /sessao |
+| Metodo: DELETE |  /sessao/1 |
+| Metodo: GET |  /sessao/1 |
+| Metodo: GET |  /sessao |
 
 
 ### 🔐 String de conexão do banco
