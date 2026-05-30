@@ -4,12 +4,12 @@ Exemplo de criação de API em Node.js com arquitetura de camadas utilizando ban
 #### O que voçê vai ver nesse Projeto
 | Tecnologia | Descrição |
 |-----------|-----------|
-| **Supabase** | Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL  |
-| **Client Supabase** | Instância de cliente que permite interagir com todos os serviços do Supabase |
 | **.env** | Gerenciar variáveis de ambiente, garantindo segurança (não expor senhas/chaves) e flexibilidade entre ambientes (desenvolvimento, produção) |
+| **Client Supabase** | Instância de cliente que permite interagir com todos os serviços do Supabase |
 | **Express JSON** |É um middleware embutido responsável por analisar (parsear) corpos de requisições HTTP recebidas que contenham dados no formato JSON. |
 | **Express Router** | Reponsável por criar manipuladores de rotas modulares e montáveis.|
 | **Sequelize** | Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL.|
+| **Supabase** | Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL  |
 
 #### Requisitos do Projeto
 - Recuperar as dependencias do projeto node_modules . 
