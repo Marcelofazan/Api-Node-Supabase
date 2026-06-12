@@ -1,4 +1,4 @@
-## 🚀 Supabase-Api-Node
+## 🚀 Node-Api-Supabase
 Exemplo de criação de API em Node.js com arquitetura de camadas utilizando banco de dados Supabase.
 
 #### 📋 O que você vai encontrar neste projeto
