@@ -107,3 +107,8 @@ node index.js
             "inPago": false
     }
 ```
+
+#### ⚙️ Supabase deixar tabelas Enable Row Level Security (RLS) desmarcado
+- As tabelas tem que estar marcado como **UNREGISTRICTED**
+
+
